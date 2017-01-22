@@ -22,4 +22,4 @@ dependencies {
 ```
 
 ####二、截图预览
-![](https://github.com/MarnonDev/EasyStatusView/blob/master/screenshot/EasyStatusView.gif)
+![](https://github.com/AriesHoo/UIProgressView/screenshot/00.png)
