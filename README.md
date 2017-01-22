@@ -22,4 +22,4 @@ dependencies {
 ```
 
 ####二、截图预览
-![](https://github.com/AriesHoo/UIProgressView/screenshot/00.png)
+![](https://github.com/AriesHoo/UIProgressView/blob/master/screenshot/00.png)
