@@ -17,9 +17,14 @@ allprojects {
 
 ```
 dependencies {
-     compile 'com.github.AriesHoo:UIProgressView:1.0.0'
+     compile 'com.github.AriesHoo:UIProgressView:1.0.1'
 }
 ```
 
 ####二、截图预览
-![](https://github.com/MarnonDev/EasyStatusView/blob/master/screenshot/EasyStatusView.gif)
+![](https://github.com/AriesHoo/UIProgressView/blob/master/screenshot/00.png)
+![](https://github.com/AriesHoo/UIProgressView/blob/master/screenshot/01.png)
+![](https://github.com/AriesHoo/UIProgressView/blob/master/screenshot/02.png)
+![](https://github.com/AriesHoo/UIProgressView/blob/master/screenshot/03.png)
+
+
