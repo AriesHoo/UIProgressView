@@ -1,8 +1,14 @@
-#UIProgressView
+# UIProgressView
 --------------------------
-####一、简介：
+### 一、简介：
 
-一个类似新浪微博、微信样式等待Loading效果
+一个类似新浪微博、微信样式等待Loading效果;更全常见UI库参看 [UIWidget](https://github.com/AriesHoo/UIWidget)
+
+[[Sample PC Download]](https://github.com/AriesHoo/UIProgressView/blob/master/apk/sample.apk)
+
+[[Sample Mobile Download]](http://fir.im/r84v)
+
+![](https://github.com/AriesHoo/UIWidget/blob/master/apk/qr.png)
 
 **1.1 Gradle集成**
 
@@ -17,14 +23,14 @@ allprojects {
 
 ```
 dependencies {
-     compile 'com.github.AriesHoo:UIProgressView:1.0.1'
+     //compile 'com.github.AriesHoo:UIProgressView:1.1.0'
+     compile 'com.github.AriesHoo:UIProgressView:${LATEST_VERSION}'
 }
 ```
 
-####二、截图预览
-![](https://github.com/AriesHoo/UIProgressView/blob/master/screenshot/00.png)
-![](https://github.com/AriesHoo/UIProgressView/blob/master/screenshot/01.png)
-![](https://github.com/AriesHoo/UIProgressView/blob/master/screenshot/02.png)
-![](https://github.com/AriesHoo/UIProgressView/blob/master/screenshot/03.png)
+### 二、录屏预览
+
+![](https://github.com/AriesHoo/UIProgressView/blob/master/screenshot/00.gif)
+
 
 

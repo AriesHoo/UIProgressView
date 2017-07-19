@@ -1,9 +1,5 @@
-*.iml
-.gradle
-/local.properties
-/.idea/workspace.xml
-/.idea/libraries
-.DS_Store
+/.idea
+/UIProgressView.iml
+/.gradle
 /build
-/captures
-.externalNativeBuild
+/local.properties
