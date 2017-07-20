@@ -1,5 +1,5 @@
-/.idea
-/UIProgressView.iml
-/.gradle
-/build
 /local.properties
+/UIProgressView.iml
+/.idea
+/build
+/gradle
