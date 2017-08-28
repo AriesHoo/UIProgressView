@@ -16,7 +16,7 @@ import butterknife.OnClick;
  * Function: UIProgressView示例
  * Desc:
  */
-public class MainActivity extends BaseActivity {
+public class LoadingActivity extends BaseActivity {
 
     @BindView(R.id.sBtn_msgLoading) SwitchCompat sBtnMsg;
     @BindView(R.id.sBtn_viewBackLoading) SwitchCompat sBtnViewBack;
@@ -27,6 +27,7 @@ public class MainActivity extends BaseActivity {
     private boolean isDefaultViewBack = true;
     private boolean isDefaultProgress = true;
     private boolean isBackDim = true;
+    private int style = UIProgressView.STYLE_NORMAL;
 
     @Override
     protected void setTitleBar() {
@@ -35,7 +36,7 @@ public class MainActivity extends BaseActivity {
 
     @Override
     protected int getLayout() {
-        return R.layout.activity_main;
+        return R.layout.activity_loading;
     }
 
     @Override
@@ -75,25 +76,36 @@ public class MainActivity extends BaseActivity {
         sBtnBack.setChecked(true);
     }
 
-    @OnClick({R.id.rtv_showLoading})
+    @OnClick({R.id.rtv_showLoading, R.id.rtv_showWeiBoLoading, R.id.rtv_showWeiXinLoading, R.id.rtv_showMaterialLoading})
     public void onViewClicked(View view) {
         switch (view.getId()) {
             case R.id.rtv_showLoading:
-                UIProgressView loading = new UIProgressView(mContext);
-                if (isShowMsg) {
-                    loading.setMessage("Loading...");
-                }
-                if (!isDefaultViewBack) {
-                    loading.setBackgroundColor(Color.RED);
-                }
-                if (!isDefaultProgress) {
-                    loading.setIndeterminateDrawable(R.drawable.progress_loading);
-                }
-                if (!isBackDim) {
-                    loading.setDimAmount(0f);
-                }
-                loading.show();
+                style = UIProgressView.STYLE_NORMAL;
+                break;
+            case R.id.rtv_showWeiBoLoading:
+                style = UIProgressView.STYLE_WEI_BO;
+                break;
+            case R.id.rtv_showWeiXinLoading:
+                style = UIProgressView.STYLE_WEI_XIN;
+                break;
+            case R.id.rtv_showMaterialLoading:
+                style = UIProgressView.STYLE_MATERIAL_DESIGN;
                 break;
         }
+        UIProgressView loading = new UIProgressView(mContext, style);
+        if (isShowMsg) {
+            loading.setMessage(R.string.loading);
+        }
+        if (!isDefaultViewBack) {
+            loading.setBackgroundColor(Color.MAGENTA);
+        }
+        if (!isDefaultProgress) {
+            loading.setIndeterminateDrawable(R.drawable.progress_loading);
+        }
+        if (!isBackDim) {
+            loading.setDimAmount(0f);
+        }
+        loading.setLoadingColor(getResources().getColor(R.color.colorAccent));
+        loading.show();
     }
 }
