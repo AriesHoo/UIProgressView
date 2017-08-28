@@ -4,6 +4,8 @@
 
 一个类似包含新浪微博、微信样式、Material Design 风格样式、系统自带样等待Loading效果;更全常见UI库参看 [UIWidget](https://github.com/AriesHoo/UIWidget)
 
+## 说明1.2.0以后版本UIWidget维护，不再做版本更新
+
 [[Sample PC Download]](https://github.com/AriesHoo/UIProgressView/blob/master/apk/sample.apk)
 
 [[Sample Mobile Download]](http://fir.im/r84v)
